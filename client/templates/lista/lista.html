@@ -8,16 +8,13 @@
           <span class="{{isCheck}}">{{nome}}</span>
         </div>
         <div class="col s5 m3">
-          <a data-tooltip="Remover Tarefa" id = "removerTarefa" class="btn-floating btn-small waves-effect
-          waves-light red espaco-btn-custom right tooltipped"
-          data-position="top" data-delay="50">
-          <i class="mdi-action-delete"></i>
+          <a class="btn-floating btn-small waves-effect
+          waves-light red espaco-btn-custom right removerTarefas">
+            <i class="mdi-action-delete"></i>
           </a>
-          <a data-tooltip="Editar Tarefa" id="editarLista"
-          class="btn-floating btn-small waves-effect
-          waves-light blue espaco-btn-custom right tooltipped"
-          data-position="top" data-delay="50" >
-          <i class="mdi-editor-border-color "></i>
+          <a class="btn-floating btn-small waves-effect
+          waves-light blue espaco-btn-custom right editarLista">
+            <i class="mdi-editor-border-color "></i>
           </a>
           <input type="checkbox" id="{{_id}}"
           checked="{{status}}">

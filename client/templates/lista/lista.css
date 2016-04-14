@@ -13,6 +13,6 @@
 .espaco-btn-custom i{
   line-height: 30px !important;
 }
-#editarLista{
-  margin-right: 5px;
+.editarLista{
+  margin-right: 5px !important;
 }

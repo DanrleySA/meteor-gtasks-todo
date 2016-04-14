@@ -1,10 +1,4 @@
 Template.lista.rendered = function(){
-  setTimeout(function(){
-    $('.tooltipped').tooltip({
-    delay: 50
-    });
-  }, 1000);
-
 }
 Template.lista.helpers({
   tarefas:function() {
@@ -26,7 +20,7 @@ Template.lista.events({
       }
     })
   },
-  'click #removerTarefa': function(e) {
+  'click .removerTarefa': function(e) {
     e.preventDefault()
     Tarefas.remove(this._id)
   }
