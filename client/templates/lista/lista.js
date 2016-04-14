@@ -1,3 +1,11 @@
+Template.lista.rendered = function(){
+  setTimeout(function(){
+    $('.tooltipped').tooltip({
+    delay: 50
+    });
+  }, 1000);
+
+}
 Template.lista.helpers({
   tarefas:function() {
     return Tarefas.find()
@@ -17,5 +25,9 @@ Template.lista.events({
         status: e.currentTarget.checked
       }
     })
+  },
+  'click #removerTarefa': function(e) {
+    e.preventDefault()
+    Tarefas.remove(this._id)
   }
 })
